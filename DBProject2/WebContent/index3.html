@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js">
+    </script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/paper/bootstrap.min.css" />
+    <script>
+        var console = null;
+        var category;
+
+        function searching() {
+
+            var input = document.getElementById('navigation').value.toLowerCase().toString();
+            if (input == "") {
+                alert("input something");
+
+            }
+            var search_input = input.split(" ");
+            for (i = 0; i <= search_input.length; i++) {
+
+                if (search_input[i] == "ps4") {
+                    console = search_input[i];
+
+                }
+                if (search_input[i] == "xbox") {
+                    console = search_input[i];
+
+                }
+                if (search_input[i] == "nintendo") {
+                    console = search_input[i];
+
+
+                }
+                if (search_input[i] == "wii") {
+                    console = search_input[i];
+
+                }
+                if (search_input[i] == "platformer") {
+                    category = search_input[i];
+
+                }
+			    if (search_input[i] == "rpg") {
+                    category = search_input[i];
+
+                }	
+                if (search_input[i] == "strategy") {
+                    category = search_input[i];
+
+                }
+                if (search_input[i] == "arcade") {
+                    category = search_input[i];
+
+                }
+                if (search_input[i] == "actionadventure") {
+                    category = search_input[i];
+
+                }
+                if (search_input[i] == "beat'emup") {
+                    category = search_input[i];
+
+                }
+                if (search_input[i] == "shooter") {
+                    category = search_input[i];
+
+                }
+                if (search_input[i] == "adventure") {
+                    category = search_input[i];
+
+                }
+                if (search_input[i] == "sports") {
+                    category = search_input[i];
+
+                }
+                if (search_input[i] == "family") {
+                    category = search_input[i];
+
+                }
+
+            }
+
+
+
+            //	input.reset(); use this to clear the values from the memory
+            try {
+
+                if (category) {
+                    alert(category);
+                }
+                if (console) {
+                    alert(console);
+                }
+
+            } catch (err) {
+
+                console.log("one value is not filled");
+
+            }
+
+
+        }
+    </script>
+</head>
+
+<body style="background-color:#D7D7D7;">
+    <!-- Header -->
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header" style="background-color:transparent;">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <center><a class="navbar-brand" style="font-size:25px;" href="index.html">Videogame</a> </center>
+        </div>
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav"> </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control col-lg-8" placeholder="Search"> </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"> <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Questions<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="divider"> </li>
+                        <li><a href="index2.html">Question 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header end-->
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="jumbotron" style="height:100%; width:100%;">
+                        <center>
+                            <h4> Please enter the Key words to search</h4> </center>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="col-lg-10">
+                            <div class="form-group">
+                                <input type="text" id="navigation" class="form-control" placeholder=" Example: I need the games from ps4 and from the category shooter!!">
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="#" id="search" class="btn btn-primary glyphicon glyphicon-search" onclick="searching();"></a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2"></div>
+    </div>
+    </div>
